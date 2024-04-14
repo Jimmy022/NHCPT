@@ -1,0 +1,44 @@
+# This likelihood builds on the fake AliCPT likelihood. 
+#It is possible to use the lensing
+# auto- or cross-correlations alone, in combination with temperature
+# and polarization, or for delensing the temperature and polarization
+# spectra (e.g. if both lensing and B-mode polarization is desired)
+
+# Updated noise file using minimum variance noise estimate
+# from Brinckmann, Hooper et al. 1808.05955
+
+# Where to read/write fiducial model
+AliCPT_r_test.data_directory     = data.path['data']
+AliCPT_r_test.fiducial_file      = 'AliCPT_r_test_fiducial.dat'
+
+# Experimental sensitivity
+# l_max_TT = 3000, l_max_EE = 3000, l_max_pp = 3000
+AliCPT_r_test.l_min              = 30
+AliCPT_r_test.l_max              = 1000
+AliCPT_r_test.f_sky              = 0.1
+AliCPT_r_test.num_channels       = 2
+
+# Angular resolution
+# theta_fwhm must be in in arcmin
+# channel GHz [95, 150]
+AliCPT_r_test.theta_fwhm = [19.0, 11.0]
+
+# Resolution for Temperature and Polarisation
+# sigma's must be in muK.arcmin
+AliCPT_r_test.sigma_T = [8.6, 8.6]
+AliCPT_r_test.sigma_P = [12.2, 12.2]
+
+# Do you want to include Bmodes (Gaussian approximation)?
+AliCPT_r_test.Bmodes = True
+AliCPT_r_test.delensing = True
+AliCPT_r_test.delensing_file = 'AliCPT_r_test.dat'
+
+# Do you want to include lensing extraction?
+AliCPT_r_test.LensingExtraction = False
+AliCPT_r_test.neglect_TD = True
+AliCPT_r_test.unlensed_clTTTEEE = False
+AliCPT_r_test.ExcludeTTTEEE = False
+
+# using minimum variance noise estimate for the above settings
+# note with this likelihood the following noise file is not temporary
+AliCPT_r_test.temporary_Nldd_file = 'AliCPT_r_test.dat'

@@ -1,0 +1,6 @@
+# Values for tau (following Astro-ph/1605.02985)
+# This likelihood is a prior on tau_reio inspired
+# by testtau, the low multipole polarization 
+# likelihood from the Planck 2016 paper
+testtau.tau    = 0.0617
+testtau.sigma  = 0.023

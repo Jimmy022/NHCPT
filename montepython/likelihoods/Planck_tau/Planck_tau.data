@@ -1,0 +1,6 @@
+# Values for tau (following Astro-ph/1605.02985)
+# This likelihood is a prior on tau_reio inspired
+# by Planck_tau, the low multipole polarization 
+# likelihood from the Planck 2018 paper
+Planck_tau.tau    = 0.055
+Planck_tau.sigma  = 0.0074

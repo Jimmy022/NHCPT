@@ -1,0 +1,6 @@
+# Values for tau (following Astro-ph/1605.02985)
+# This likelihood is a prior on tau_reio inspired
+# by HERA, the low multipole polarization 
+# likelihood from the Planck 2016 paper
+HERA.tau    = 0.055
+HERA.sigma  = 0.00083

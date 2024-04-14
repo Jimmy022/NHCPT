@@ -1,0 +1,3 @@
+build/temp.linux-x86_64-2.7/quicklens/math/wignerd.o: \
+ quicklens/math/wignerd.c
+commandline: -Ibuild/src.linux-x86_64-2.7/build/src.linux-x86_64-2.7/quicklens/math -I/exports/home/don/data/tools/anaconda/anaconda3/envs/py2/lib/python2.7/site-packages/numpy/core/include -I/exports/home/don/data/tools/anaconda/anaconda3/envs/py2/include/python2.7 -c-Ibuild/src.linux-x86_64-2.7/build/src.linux-x86_64-2.7/quicklens/math -I/exports/home/don/data/tools/anaconda/anaconda3/envs/py2/lib/python2.7/site-packages/numpy/core/include -I/exports/home/don/data/tools/anaconda/anaconda3/envs/py2/include/python2.7
